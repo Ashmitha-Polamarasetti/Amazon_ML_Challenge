@@ -1,0 +1,14 @@
+# Official Amazon challenge dataset
+student_resource/
+__MACOSX/
+
+# Generated candidate output
+member2/final_candidates.tsv
+
+# Python
+__pycache__/
+*.pyc
+
+# Local/editor files
+.vscode/
+.idea/
