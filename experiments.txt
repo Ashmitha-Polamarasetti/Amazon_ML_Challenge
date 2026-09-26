@@ -1,0 +1,84 @@
+========================================
+EXPERIMENT 2
+========================================
+
+Strategy:
+1. Exact normalized business name
+2. Informative address-token blocking
+3. Same-country blocking
+4. Ignore address-token blocks > 200
+
+S1 evaluated:
+2,206,821
+
+True matches:
+7,638,365
+
+Recovered true matches:
+4,696,326
+
+Candidate Recall:
+61.4834%
+
+S1 receiving candidates:
+1,966,490
+
+Total candidates:
+262,630,522
+
+Average candidates/S1:
+119.01
+
+Comparison with V1:
+V1 recall: 21.8475%
+V2 recall: 61.4834%
+
+Conclusion:
+Address-token blocking greatly improves recall,
+but candidate volume increased substantially.
+Next step: improve candidate ranking/blocking quality.
+
+========================================
+EXPERIMENT 3
+========================================
+
+Dataset:
+100,000 reproducible validation S1
+Random seed: 42
+
+Strategies:
+1. Exact normalized name
+2. Legal-suffix-free sorted name signature
+3. Informative address tokens
+4. Same-country blocking
+
+Max signature block: 100
+Max address block: 200
+
+True matches:
+345,707
+
+Recovered true matches:
+255,641
+
+Candidate Recall:
+73.9473%
+
+S1 receiving candidates:
+97,311 / 100,000
+
+Total candidates:
+13,269,455
+
+Average candidates/S1:
+132.69
+
+Conclusion:
+Name signatures provide a strong recall improvement.
+Next priority is recovering fuzzy/typo/transliteration
+matches without dramatically increasing candidate volume.
+
+
+V4 Candidate Recall: 74.6942%
+Average candidates/S1: 133.30
+Recovered: 258,223 / 345,707

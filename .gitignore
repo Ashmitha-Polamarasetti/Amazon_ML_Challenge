@@ -1,0 +1,26 @@
+# Dataset / generated TSV files
+*.tsv
+dataset/
+data/
+validation_sample/
+output/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Models / generated artifacts
+*.pkl
+*.joblib
+
+# IDE / OS
+.vscode/
+.DS_Store
+Thumbs.db
