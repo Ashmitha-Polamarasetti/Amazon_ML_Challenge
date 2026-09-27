@@ -24,3 +24,8 @@ venv/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Final submission artifacts
+Mission_Impossible_submission.zip
+final_submission/
+validator_log.txt
