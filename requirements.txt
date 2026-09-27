@@ -1,0 +1,8 @@
+@"
+pandas
+numpy
+scikit-learn
+scipy
+rapidfuzz
+joblib
+"@ | Set-Content final_submission\code\business_entity_resolution\requirements.txt
